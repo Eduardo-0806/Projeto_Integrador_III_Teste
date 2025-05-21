@@ -13,26 +13,63 @@ body {
 }
 
 /* Cabeçalho */
-header {
-    background-color: #3366cc;
-    color: white;
-    padding: 20px 0;
+.navbar {
     text-align: center;
-}
+    padding: 20px 0 10px;
+    background-color: #2456aa;
+    color: white
+    }
 
-header h1 {
-    margin-bottom: 10px;
-}
-
-header nav a {
+.navbar a {
+    padding: 10px;
     color: white;
-    margin: 0 15px;
     text-decoration: none;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 32px;
     font-weight: bold;
 }
 
-header nav a:hover {
-    text-decoration: underline;
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 10px;
+}
+
+.menu-item {
+    position: relative;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #2456aa;
+    border-radius: 4px;
+    min-width: 160px;
+    text-align: left;
+    z-index: 1;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown a:hover {
+    background-color: #1a3f7a;
+}
+
+.menu-item:hover .dropdown {
+    display: block;
 }
 
 /* Seções principais */
