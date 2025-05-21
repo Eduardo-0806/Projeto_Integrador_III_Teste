@@ -92,6 +92,12 @@ section h2 {
     margin-bottom: 15px;
 }
 
+section h3 {
+    color:#6497da;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
 /* Rodapé */
 footer {
     background-color: #e0e0e0;
