@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,92 +8,148 @@
     <link rel="stylesheet" href="style.css" />
 
 </head>
+
 <body>
 
     <div class="navbar">
-    <h1>Projeto Integrador</h1>
-    <div class="menu">
-        <div class="menu-item"><a href="#introducao">Introdução</a></div>
-        <div class="menu-item"><a href="#metodologia">Metodologia</a></div>
-        <div class="menu-item">
-            <a href="#analise">Analise</a>
-            <div class="dropdown">
-                <a href="#analise_startup_pais">Analise de Startup Por País</a>
-                <a href="#analise_startup_segmento">Analise de Startup por Segmento</a>
-                <a href="#analise_perfil">Analise de Perfil Investidor</a>
-                <a href="#topico4">Discussão</a>
+        <h1>Projeto Integrador</h1>
+        <div class="menu">
+            <div class="menu-item"><a href="#introducao">Introdução</a></div>
+            <div class="menu-item"><a href="#metodologia">Metodologia</a></div>
+            <div class="menu-item">
+                <a href="#analise">Analise</a>
+                <div class="dropdown">
+                    <a href="#analise_startup_segmento">Analise de Startup por Segmento</a>
+                    <a href="#analise_startup_pais">Analise de Startup Por País</a>
+                    <a href="#analise_perfil">Analise de Perfil Investidor</a>
+                    <a href="#topico4">Discussão</a>
+                </div>
             </div>
+            <div class="menu-item"><a href="#conclusao">Conclusão</a></div>
         </div>
-        <div class="menu-item"><a href="#conclusao">Conclusão</a></div>
     </div>
-</div>
 
     <main>
         <section id="introducao">
             <h2>Introdução</h2>
             <p>
-                A robótica educacional tem se mostrado uma ferramenta eficaz para engajar os alunos e desenvolver habilidades do século XXI...
+                Nos últimos anos, o interesse por investimentos tem crescido significativamente,
+                impulsionado pelo fácil acesso à informação e ao mercado financeiro por meio de
+                plataformas digitais. <br>No entanto, investidores iniciantes frequentemente enfrentam
+                desafios ao gerenciar seus recursos de forma eficiente, devido à falta de
+                conhecimento técnico, à dificuldade em planejar investimentos e à ausência de
+                ferramentas acessíveis que facilitem a tomada de decisão.
+            </p>
+            <p>
+                A sociedade impactada por esse problema é composta por indivíduos que estão
+                dando os primeiros passos no mundo dos investimentos. Geralmente, são pessoas
+                que buscam aumentar seu patrimônio, mas que possuem pouca ou nenhuma
+                experiência no mercado financeiro. <br>
+                Esse grupo inclui jovens adultos iniciando sua vidafinanceira, trabalhadores que desejam fazer seu
+                dinheiro render mais e até mesmo aposentados que querem investir suas economias de forma segura. No
+                entanto, a falta de um planejamento estruturado pode levar a decisões impulsivas, exposição a riscos
+                desnecessários e dificuldades em atingir metas financeiras.
+            </p>
+            <p>
+                Considerando esse cenário, o projeto desenvolvido visa criar um aplicativo para investidores iniciantes,
+                na intenção de orientar pessoas sem experiência nenhuma ou que ainda estão iniciando na área de
+                investimento, permitindo com que o dinheiro investido seja bem direcionado considerando suas
+                necessidades, objetivos e situação de modo particular
             </p>
         </section>
-        
+
         <section id="metodologia">
             <h2>Metodologia</h2>
+            <h3>Fonte de Dados</h3>
+            <p>O projeto foi baseado em dados coletados em arquivos .csv disponibilizados de maneira pública no site <a
+                    href="https://www.kaggle.com/">Kaggle</a>, uma plataforma comunitária on-line para cientistas de
+                dados entusiastas do aprendizado de máquina. O Kaggle permite que os usuários colaborem com outros
+                usuários, encontrem e publiquem conjuntos de dados, entre outras funcionalidades.
+            </p>
             <p>
-                A robótica educacional tem se mostrado uma ferramenta eficaz para engajar os alunos e desenvolver habilidades do século XXI...
+                O primeiro arquivo csv utilizado em 2 das 3 analises que serão apresentadas posteriormente se trata do <a href="https://www.kaggle.com/datasets/adilshamim8/startup-growth-and-investment-data">"startup_growth_investment_data"</a>, que contem informações referente aos investimentos realizados em startups de diversos segmentos e multiplos paises.
+            </p>
+            <p>
+                O segundo arquivo csv utilizado se trata do <a href="https://www.kaggle.com/datasets/nitindatta/finance-data?utm_source=chatgpt.com&select=Original_data.csv">"Original_data"</a>, um arquivo onde um grupo de pessoas foram entrevistadas sobre os seus investimentos realizados, tal como sua fonte de informações e outros detalhes.
+            </p>
+            <h3>Ferramentas Utilizadas</h3>
+            <p>
+                A linguagem escolhida para a analise dos dois datasets utilizado foi o python, em decorrência da facilidade de sua escrita e bibliotecas especializada a tarefa de analise de dados, como pandas(Manipulação de DataFrame), matplotlib e seaborn(Ambas para a construção e estilização de gráficos)
+            </p>
+            <p>
+                Para demonstraçao dos resultados utilizados, foi construído uma pagina simples em HTML e hospedada através do GitHub Pages.
             </p>
         </section>
 
         <section id="analise">
             <h2>Análise</h2>
             <p>
-                O projeto foi desenvolvido com kits LEGO, promovendo aprendizagem ativa com foco na colaboração entre alunos e professores...
+                Os gráficos a seguir 
             </p>
-            <h3 id="analise_startup_pais">Analise de Startup por Pais</h3>
+            <h3 id="analise_startup_segmento">Analise de Startup por Segmento</h3>
             <div class="galeria">
-        <img src="img/Analise_Startup_Pais_Soma_Valorizacao.png" alt="Robô montado pelos alunos">
-        <img src="img/Analise_Startup_Pais_Total_Investimento.png" alt="Alunos programando o robô">
-        <img src="img/Analise_Startup_Pais_QTD.png" alt="Equipe apresentando o projeto final">
-        <img src="img/Analise_Startup_Pais_Valor_Investido.png" alt="Figura 4">
+                <img src="img/Analise_Startup_Pais_Soma_Valorizacao.png" alt="Robô montado pelos alunos">
+                <img src="img/Analise_Startup_Pais_Total_Investimento.png" alt="Alunos programando o robô">
+                <img src="img/Analise_Startup_Pais_QTD.png" alt="Equipe apresentando o projeto final">
+                <img src="img/Analise_Startup_Pais_Valor_Investido.png" alt="Figura 4">
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga neque laboriosam voluptas perspiciatis officia veritatis deserunt, ipsa voluptatibus aspernatur eius voluptatem, repellat porro numquam saepe possimus eos commodi dolore atque.</p>
+            <p>Lorem <strong>ipsum</strong> dolor sit amet consectetur, adipisicing elit. Fuga neque laboriosam voluptas perspiciatis
+                officia veritatis deserunt, ipsa voluptatibus aspernatur eius voluptatem, repellat porro numquam saepe
+                possimus eos commodi dolore atque.</p>
         </section>
 
         <section>
-            <h3 id="analise_startup_segmento">Analise de Startup por Segmento</h3>
+            <h3 id="analise_startup_pais">Analise de Startup por Pais</h3>
             <p>
-                O projeto foi desenvolvido com kits LEGO, promovendo aprendizagem ativa com foco na colaboração entre alunos e professores...
+                O projeto foi desenvolvido com kits LEGO, promovendo aprendizagem ativa com foco na colaboração entre
+                alunos e professores...
             </p>
 
             <div class="galeria">
-            <img src="img/Analise_Startup_Segmento_Crescimento.png" alt="Robô montado pelos alunos">
-            <img src="img/Analise_Startup_Segmento_QTD_Investidores.png" alt="Alunos programando o robô">
-            <img src="img/Analise_Startup_Segmento_Surgimento_Startup.png" alt="Robô montado pelos alunos">
-            <img src="img/Analise_Startup_Segmento_Maior_Valor.png" alt="Alunos programando o robô">
+                <img src="img/Analise_Startup_Segmento_Crescimento.png" alt="Robô montado pelos alunos">
+                <img src="img/Analise_Startup_Segmento_QTD_Investidores.png" alt="Alunos programando o robô">
+                <img src="img/Analise_Startup_Segmento_Surgimento_Startup.png" alt="Robô montado pelos alunos">
+                <img src="img/Analise_Startup_Segmento_Maior_Valor.png" alt="Alunos programando o robô">
             </div>
+            <p>
+                <ul>
+    <li>O segmento HealthTech lidera em valor total investido e número de startups, evidenciando uma forte tendência no setor de saúde.</li>
+    <li>O investimento total anual apresenta flutuações, com crescimento mais consistente após 2010.</li>
+    <li>Startups de SaaS e E-commerce também se destacam, mostrando grande atratividade dos setores de tecnologia e varejo digital.</li>
+    <li>A Alemanha apresenta a maior média de crescimento percentual entre os países analisados.</li>
+    <li>A Austrália lidera em número de investidores, demonstrando um ecossistema de apoio robusto.</li>
+    <li>O <strong>número</strong> de fundações de startups por ano mostra resiliência, com picos recorrentes e rápida recuperação após quedas.</li>
+  </ul>
+            </p>
         </section>
         <section>
             <h3 id="analise_perfil">Analise de Perfil</h3>
             <p>
-                O projeto foi desenvolvido com kits LEGO, promovendo aprendizagem ativa com foco na colaboração entre alunos e professores...
+                O projeto foi desenvolvido com kits LEGO, promovendo aprendizagem ativa com foco na colaboração entre
+                alunos e professores...
             </p>
 
             <div class="galeria">
-        <img src="img/Analise_Perfil_Genero.png" alt="Robô montado pelos alunos">
-        <img src="img/Analise_Perfil_Faixa_Etaria.png" alt="Alunos programando o robô">
-        <img src="img/Analise_Perfil_Expectativa_Retorno.png" alt="Figura 4">
-        <img src="img/Analise_Perfil_Objetivo.png" alt="Equipe apresentando o projeto final">
-        <img src="img/Analise_Perfil_Fonte_Informacao.png" alt="">
+                <img src="img/Analise_Perfil_Genero.png" alt="Robô montado pelos alunos">
+                <img src="img/Analise_Perfil_Faixa_Etaria.png" alt="Alunos programando o robô">
+                <img src="img/Analise_Perfil_Expectativa_Retorno.png" alt="Figura 4">
+                <img src="img/Analise_Perfil_Objetivo.png" alt="Equipe apresentando o projeto final">
+                <img src="img/Analise_Perfil_Fonte_Informacao.png" alt="">
             </div>
 
         </section>
 
-   
+
 
         <section id="conclusao">
             <h2>Conclusão</h2>
             <p>
-                O projeto mostrou-se eficaz no desenvolvimento cognitivo e emocional dos alunos, abrindo portas para políticas públicas inovadoras.
+                A análise dos dados de startups e do perfil dos investidores revela um panorama claro e consistente sobre o ecossistema de inovação e investimento. Os segmentos com maior volume de investimentos — como HealthTech, SaaS e E-commerce — refletem a prioridade do mercado em setores ligados à saúde, tecnologia e digitalização, especialmente após 2010, quando os aportes se tornaram mais consistentes. <br>
+                A Alemanha destacou-se com a maior média de crescimento percentual entre os países, enquanto a Austrália lidera em número de investidores, indicando um ambiente altamente engajado.
             </p>
+            <p>No que diz respeito ao perfil dos investidores, a predominância masculina e a faixa etária entre 25 e 30 anos sugerem um público jovem e ainda marcado por uma participação desigual de gênero. A maioria busca valorização de capital, o que caracteriza um perfil arrojado, com altas expectativas de retorno. Além disso, nota-se uma forte confiança em fontes tradicionais de informação, como consultores financeiros e publicações impressas, embora isso aponte para oportunidades no fortalecimento de canais digitais confiáveis.
+            </p>
+            <p>Portanto, o cenário analisado mostra um ecossistema de startups em crescimento, impulsionado por investidores jovens, bem informados e ambiciosos, especialmente voltados a setores estratégicos da economia moderna. Essa sinergia entre inovação e capital cria um terreno fértil para novos negócios, desde que haja equilíbrio entre risco, retorno e acesso à informação de qualidade.</p>
         </section>
     </main>
 
@@ -101,4 +158,5 @@
     </footer>
 
 </body>
+
 </html>
