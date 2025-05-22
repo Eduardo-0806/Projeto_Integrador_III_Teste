@@ -113,8 +113,8 @@ for (i, j), cell in table.get_celld().items():
 table.auto_set_font_size(False)
 table.set_fontsize(10)
 table.scale(1.2, 1.2)
-plt.title("Valor Investido por Segmento", fontsize=14, fontweight='bold', color='white', pad=20)
-#plt.savefig("img\\Analise_Startup_Pais_QTD")
+plt.title("Quantidade de Startup por Segmento", fontsize=14, fontweight='bold', color='white', pad=20)
+plt.savefig("img\\Analise_Startup_Pais_QTD")
 plt.show()
 
 # ======================================
