@@ -44,7 +44,9 @@
                 A sociedade impactada por esse problema é composta por indivíduos que estão
                 dando os primeiros passos no mundo dos investimentos. Geralmente, são pessoas
                 que buscam aumentar seu patrimônio, mas que possuem pouca ou nenhuma
-                experiência no mercado financeiro. <br>
+                experiência no mercado financeiro.
+            </p>
+            <p>
                 Esse grupo inclui jovens adultos iniciando sua vidafinanceira, trabalhadores que desejam fazer seu
                 dinheiro render mais e até mesmo aposentados que querem investir suas economias de forma segura. No
                 entanto, a falta de um planejamento estruturado pode levar a decisões impulsivas, exposição a riscos
@@ -67,25 +69,33 @@
                 usuários, encontrem e publiquem conjuntos de dados, entre outras funcionalidades.
             </p>
             <p>
-                O primeiro arquivo csv utilizado em 2 das 3 analises que serão apresentadas posteriormente se trata do <a href="https://www.kaggle.com/datasets/adilshamim8/startup-growth-and-investment-data">"startup_growth_investment_data"</a>, que contem informações referente aos investimentos realizados em startups de diversos segmentos e multiplos paises.
+                O primeiro arquivo csv utilizado em 2 das 3 analises que serão apresentadas posteriormente se trata do
+                <a
+                    href="https://www.kaggle.com/datasets/adilshamim8/startup-growth-and-investment-data">"startup_growth_investment_data"</a>,
+                que contem informações referente aos investimentos realizados em startups de diversos segmentos e
+                multiplos paises.
             </p>
             <p>
-                O segundo arquivo csv utilizado se trata do <a href="https://www.kaggle.com/datasets/nitindatta/finance-data?utm_source=chatgpt.com&select=Original_data.csv">"Original_data"</a>, um arquivo onde um grupo de pessoas foram entrevistadas sobre os seus investimentos realizados, tal como sua fonte de informações e outros detalhes.
+                O segundo arquivo csv utilizado se trata do <a
+                    href="https://www.kaggle.com/datasets/nitindatta/finance-data?utm_source=chatgpt.com&select=Original_data.csv">"Original_data"</a>,
+                um arquivo onde um grupo de pessoas foram entrevistadas sobre os seus investimentos realizados, tal como
+                sua fonte de informações e outros detalhes.
             </p>
             <h3>Ferramentas Utilizadas</h3>
             <p>
-                A linguagem escolhida para a analise dos dois datasets utilizado foi o python, em decorrência da facilidade de sua escrita e bibliotecas especializada a tarefa de analise de dados, como pandas(Manipulação de DataFrame), matplotlib e seaborn(Ambas para a construção e estilização de gráficos)
+                A linguagem escolhida para a analise dos dois datasets utilizado foi o python, em decorrência da
+                facilidade de sua escrita e bibliotecas especializada a tarefa de analise de dados, como
+                pandas(Manipulação de DataFrame), matplotlib e seaborn(Ambas para a construção e estilização de
+                gráficos)
             </p>
             <p>
-                Para demonstraçao dos resultados utilizados, foi construído uma pagina simples em HTML e hospedada através do GitHub Pages.
+                Para demonstraçao dos resultados utilizados, foi construído uma pagina simples em HTML e hospedada
+                através do GitHub Pages.
             </p>
         </section>
 
         <section id="analise">
             <h2>Análise</h2>
-            <p>
-                Os gráficos a seguir 
-            </p>
             <h3 id="analise_startup_segmento">Analise de Startup por Segmento</h3>
             <div class="galeria">
                 <img src="img/Analise_Startup_Pais_Soma_Valorizacao.png" alt="Robô montado pelos alunos">
@@ -93,9 +103,29 @@
                 <img src="img/Analise_Startup_Pais_QTD.png" alt="Equipe apresentando o projeto final">
                 <img src="img/Analise_Startup_Pais_Valor_Investido.png" alt="Figura 4">
             </div>
-            <p>Lorem <strong>ipsum</strong> dolor sit amet consectetur, adipisicing elit. Fuga neque laboriosam voluptas perspiciatis
-                officia veritatis deserunt, ipsa voluptatibus aspernatur eius voluptatem, repellat porro numquam saepe
-                possimus eos commodi dolore atque.</p>
+            <ul>
+                <h4>Valor Total Estimado Por Segmento</h4>
+
+                <li>O domínio do E-commerce pode ser explicado pelo crescimento exponencial das compras online, impulsionado principalmente pela pandemia e pela digitalização global do varejo.</li>
+                <li>HealthTech e SaaS (Software as a Service) também se destacam devido à alta demanda por soluções tecnológicas na saúde e automação de processos empresariais.</li>
+                <li>Biotech, embora importante, tem um ciclo de desenvolvimento mais longo e exige mais investimento em pesquisa, o que pode justificar seu valor estimado menor em comparação.</li>
+
+                <h4>Total de Investimento em Startups por Ano</h4>
+                <li>Há picos notáveis por volta de 2015 a 2019 que coincidem com períodos de inovação tecnológica intensa e o boom de startups unicórnios.</li>
+                <li>A queda observada em 2020 pode estar relacionada à incerteza econômica provocada pela pandemia de COVID-19, onde muitos investidores reduziram o risco.</li>
+                <li>A recuperação posterior demonstra a resiliência do ecossistema de startups e a retomada da confiança dos investidores, especialmente em setores como saúde, logística e tecnologia.</li>
+
+                <h4>Quantidade de Startup por Segmento</h4>
+
+                <li>A dominância de HealthTech pode refletir a atenção crescente a soluções de saúde, telemedicina e wearables.</li>
+                <li>SaaS se destaca por seu modelo de negócio escalável e por atender empresas de todos os portes.</li>
+                <li>A menor participação da Biotech está alinhada com seu desenvolvimento mais técnico, caro e regulado, o que reduz o número de players no mercado.</li>
+
+                <h4>Valor Investido Total por Segmento</h4>
+                <li>O alto investimento em HealthTech mostra que, além de haver muitas startups, elas também recebem grandes aportes individuais, o que é típico em áreas com alto impacto social e potencial de crescimento.</li>
+                <li>E-commerce permanece forte pelo seu alcance global e rápida escalabilidade.</li>
+                <li>O investimento relativamente baixo em Biotech, mesmo com grande potencial, é reflexo do alto risco e longo retorno do setor, o que exige investidores especializados.</li>
+            </ul>
         </section>
 
         <section>
@@ -111,16 +141,29 @@
                 <img src="img/Analise_Startup_Segmento_Surgimento_Startup.png" alt="Robô montado pelos alunos">
                 <img src="img/Analise_Startup_Segmento_Maior_Valor.png" alt="Alunos programando o robô">
             </div>
-            <p>
-                <ul>
-    <li>O segmento HealthTech lidera em valor total investido e número de startups, evidenciando uma forte tendência no setor de saúde.</li>
-    <li>O investimento total anual apresenta flutuações, com crescimento mais consistente após 2010.</li>
-    <li>Startups de SaaS e E-commerce também se destacam, mostrando grande atratividade dos setores de tecnologia e varejo digital.</li>
-    <li>A Alemanha apresenta a maior média de crescimento percentual entre os países analisados.</li>
-    <li>A Austrália lidera em número de investidores, demonstrando um ecossistema de apoio robusto.</li>
-    <li>O <strong>número</strong> de fundações de startups por ano mostra resiliência, com picos recorrentes e rápida recuperação após quedas.</li>
-  </ul>
-            </p>
+            <ul>
+                <h4>Média de Crescimento por País</h4>
+
+                <li>A Alemanha lidera com uma média superior a 105%, o que indica um ecossistema robusto, infraestrutura sólida e forte apoio governamental à inovação.</li>
+                <li>O destaque do Brasil é positivo e mostra o avanço dos mercados emergentes na criação de ambientes favoráveis à inovação, mesmo com desafios estruturais.</li>
+                <li>Países como Singapura e Reino Unido, embora com histórico de desenvolvimento tecnológico, aparecem com crescimento mais modesto, talvez indicando uma saturação ou estabilidade em seus mercados.</li>
+
+                <h4>Total de Investidores por País</h4>
+                <li>A Austrália, liderando o ranking, demonstra um ecossistema de investimento muito ativo, possivelmente impulsionado por políticas públicas de incentivo e capital de risco regional.</li>
+                <li>O alto número de investidores no Reino Unido e nos EUA reflete a maturidade e atratividade desses mercados para o capital de risco.</li>
+                <li>Países emergentes como Índia e Brasil mostram volumes significativos, mas ainda distantes dos líderes, sinalizando espaço para crescimento no setor de investimentos em startups.</li>
+
+                <h4>Evolução Anual da Fundação de Startups</h4>
+
+                <li>A variação pode estar associada a fatores econômicos globais, como crises financeiras (ex: 2008), políticas de incentivo à inovação, ou até eventos globais como a pandemia de COVID-19.</li>
+                <li>O pico em 2020, por exemplo, pode ter sido impulsionado por uma nova onda de soluções digitais criadas em resposta às necessidades da pandemia.</li>
+                <li>A queda em 2023 pode indicar maturação de mercado, maior seletividade dos investidores ou retração econômica global.</li>
+
+                <h4>Maiores Investimentos por País</h4>
+                <li>A distribuição relativamente equilibrada dos investimentos mostra uma globalização do capital de risco, com aportes consistentes tanto em países desenvolvidos quanto emergentes.</li>
+                <li>A França no topo pode refletir sua estratégia nacional de apoio à inovação e tecnologia (como o programa “La French Tech”).</li>
+                <li>O Brasil, apesar de sua posição no meio da tabela, confirma seu papel relevante como destino de capital para startups na América Latina.</li>
+            </ul>
         </section>
         <section>
             <h3 id="analise_perfil">Analise de Perfil</h3>
@@ -137,19 +180,50 @@
                 <img src="img/Analise_Perfil_Fonte_Informacao.png" alt="">
             </div>
 
+            <ul>
+                <h4>Distribuição de Gênero</h4>
+
+                <li>A maioria dos investidores participantes da pesquisa são do gênero masculino, representando cerca de 62,5% do total. Isso demonstra uma predominância masculina no ambiente de investimentos, embora a presença feminina, com 37,5%, aponte uma crescente inclusão e interesse das mulheres neste setor.</li>
+
+                <h4>Distribuição Faixa Etária</h4>
+                <li>A faixa etária predominante é de 30 a 35 anos (52%), seguida pela faixa de 25 a 30 anos (25%) e 20 a 25 anos (22%). Esses dados indicam que o público investidor é majoritariamente jovem, o que sugere uma geração mais conectada às finanças e preocupada com o planejamento de longo prazo.</li>
+
+                <h4>Objetivo do Investimento</h4>
+                <li>A principal motivação dos investidores é a apreciação de capital (65%), ou seja, eles buscam valorização patrimonial ao longo do tempo. Em seguida, aparecem o crescimento (27,5%) e a renda (7,5%). Isso mostra um perfil de investidor mais arrojado, com foco em rentabilidade futura em vez de retorno imediato.</li>
+
+                <h4>Expectativa de Retorno</h4>
+                <li>A maioria dos participantes espera retornos na faixa de 20% a 30%, o que confirma uma tendência de expectativas elevadas quanto à performance de seus investimentos. Apenas uma pequena parcela almeja retornos entre 10% e 20% ou acima de 30%, evidenciando uma certa moderação dentro de uma visão majoritariamente otimista.</li>
+
+                <h4>Fontes de Informação</h4>
+                <li>As principais fontes de informação dos investidores são os consultores financeiros e os jornais/revistas especializadas, seguidos pela televisão. A internet, curiosamente, aparece com menor relevância, sugerindo que, embora o público seja jovem, ainda há uma valorização de fontes tradicionais e especializadas, talvez em busca de maior credibilidade ou confiabilidade nas decisões.</li>
+            </ul>
         </section>
-
-
 
         <section id="conclusao">
             <h2>Conclusão</h2>
             <p>
-                A análise dos dados de startups e do perfil dos investidores revela um panorama claro e consistente sobre o ecossistema de inovação e investimento. Os segmentos com maior volume de investimentos — como HealthTech, SaaS e E-commerce — refletem a prioridade do mercado em setores ligados à saúde, tecnologia e digitalização, especialmente após 2010, quando os aportes se tornaram mais consistentes. <br>
-                A Alemanha destacou-se com a maior média de crescimento percentual entre os países, enquanto a Austrália lidera em número de investidores, indicando um ambiente altamente engajado.
+                A análise dos dados de startups e do perfil dos investidores revela um panorama claro e consistente
+                sobre o ecossistema de inovação e investimento. Os segmentos com maior volume de investimentos — como
+                HealthTech, SaaS e E-commerce — refletem a prioridade do mercado em setores ligados à saúde, tecnologia
+                e digitalização, especialmente após 2010, quando os aportes se tornaram mais consistentes.
             </p>
-            <p>No que diz respeito ao perfil dos investidores, a predominância masculina e a faixa etária entre 25 e 30 anos sugerem um público jovem e ainda marcado por uma participação desigual de gênero. A maioria busca valorização de capital, o que caracteriza um perfil arrojado, com altas expectativas de retorno. Além disso, nota-se uma forte confiança em fontes tradicionais de informação, como consultores financeiros e publicações impressas, embora isso aponte para oportunidades no fortalecimento de canais digitais confiáveis.
+            <p>
+                A Alemanha destacou-se com a maior média de crescimento percentual entre os países, enquanto a Austrália
+                lidera em número de investidores, indicando um ambiente altamente engajado.
             </p>
-            <p>Portanto, o cenário analisado mostra um ecossistema de startups em crescimento, impulsionado por investidores jovens, bem informados e ambiciosos, especialmente voltados a setores estratégicos da economia moderna. Essa sinergia entre inovação e capital cria um terreno fértil para novos negócios, desde que haja equilíbrio entre risco, retorno e acesso à informação de qualidade.</p>
+            <p>No que diz respeito ao perfil dos investidores, a predominância masculina e a faixa etária entre 25 e 30
+                anos sugerem um público jovem e ainda marcado por uma participação desigual de gênero. A maioria busca
+                valorização de capital, o que caracteriza um perfil arrojado, com altas expectativas de retorno.
+            </p>
+            <p>
+                Além disso, nota-se uma forte confiança em fontes tradicionais de informação, como consultores
+                financeiros e publicações impressas, embora isso aponte para oportunidades no fortalecimento de canais
+                digitais confiáveis.
+            </p>
+            <p>Portanto, o cenário analisado mostra um ecossistema de startups em crescimento, impulsionado por
+                investidores jovens, bem informados e ambiciosos, especialmente voltados a setores estratégicos da
+                economia moderna. Essa sinergia entre inovação e capital cria um terreno fértil para novos negócios,
+                desde que haja equilíbrio entre risco, retorno e acesso à informação de qualidade.</p>
         </section>
     </main>
 
