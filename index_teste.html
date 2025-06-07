@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Integrador</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+    <div class="navbar">
+        <h1>Projeto Integrador</h1>
+        <div class="menu">
+            <div class="menu-item"><a href="#introducao">Introdução</a></div>
+            <div class="menu-item"><a href="#metodologia">Metodologia</a></div>
+            <div class="menu-item">
+                <a href="#analise">Analise</a>
+                <div class="dropdown">
+                    <a href="#analise_startup_segmento">Analise Principal de Startup por Segmento</a>
+                    <a href="#analise_complementar_startup_segmento">Analise Complementar de Startup por Segmento</a>
+                    <a href="#analise_startup_pais">Analise Principal de Startup Por País</a>
+                    <a href="#analise_complementar_startup_pais">Analise Complementar de Startup Por País</a>
+                    <a href="#analise_perfil">Analise de Perfil Investidor</a>
+                </div>
+            </div>
+            <div class="menu-item"><a href="#conclusao">Conclusão</a></div>
+        </div>
+    </div>
+
+    <main>
+        <section id="introducao">
+            <h2>Introdução</h2>
+            <p>
+                Nos últimos anos, o interesse por investimentos tem crescido significativamente,
+                impulsionado pelo fácil acesso à informação e ao mercado financeiro por meio de
+                plataformas digitais. <br>No entanto, investidores iniciantes frequentemente enfrentam
+                desafios ao gerenciar seus recursos de forma eficiente, devido à <strong> falta de
+                conhecimento técnico </strong>, à dificuldade em <strong>planejar investimentos</strong> e à ausência de
+                ferramentas acessíveis que <strong>facilitem a tomada de decisão</strong>.
+            </p>
+            <p>
+                A sociedade impactada por esse problema é composta por indivíduos que estão
+                dando os primeiros passos no mundo dos investimentos. Geralmente, são pessoas
+                que buscam aumentar seu patrimônio, mas que possuem <strong>pouca ou nenhuma
+                experiência</strong> no mercado financeiro.
+            </p>
+            <p>
+                Esse grupo inclui jovens adultos iniciando sua vida financeira, trabalhadores que desejam fazer seu
+                dinheiro render mais e até mesmo aposentados que querem investir suas economias de forma segura. No
+                entanto, a falta de um planejamento estruturado pode levar a decisões impulsivas, exposição a riscos
+                desnecessários e dificuldades em atingir metas financeiras.
+            </p>
+            <p>
+                Considerando esse cenário, o projeto desenvolvido visa criar um <strong>aplicativo para investidores iniciantes</strong>,
+                na intenção de orientar pessoas sem experiência nenhuma ou que ainda estão iniciando na área de
+                investimento, permitindo com que o dinheiro investido seja bem direcionado considerando suas
+                necessidades, objetivos e situação de modo particular
+            </p>
+        </section>
+
+        <section id="metodologia">
+            <h2>Metodologia</h2>
+            <h3>Fonte de Dados</h3>
+            <p>O projeto foi baseado em dados coletados em arquivos .csv disponibilizados de maneira pública no site <a
+                    href="https://www.kaggle.com/">Kaggle</a>, uma plataforma comunitária on-line para cientistas de
+                dados entusiastas do aprendizado de máquina. O Kaggle permite que os usuários colaborem com outros
+                usuários, encontrem e publiquem conjuntos de dados, entre outras funcionalidades.
+            </p>
+            <p>
+                Dois arquivo csv utilizado em 2 das 3 analises que serão apresentadas posteriormente se trata do
+                <a
+                    href="https://www.kaggle.com/datasets/adilshamim8/startup-growth-and-investment-data">"startup_growth_investment_data"</a>,
+                que contem informações referente aos <strong>investimentos realizados em startups</strong> de diversos segmentos e
+                multiplos paises, e <a href="https://www.kaggle.com/datasets/hamnakaleemds/global-startup-success-dataset">"global_startup_sucess_dataset.csv"</a>, que contem informações referente ao <strong>nível de sucesso</strong> e <strong>informações estruturais</strong> de startups em diversos segmentos e países.
+            </p>
+            <p>
+                O último arquivo csv utilizado se trata do <a
+                    href="https://www.kaggle.com/datasets/nitindatta/finance-data?utm_source=chatgpt.com&select=Original_data.csv">"Original_data"</a>,
+                um arquivo onde um grupo de pessoas foram entrevistadas sobre os seus investimentos realizados, tal como
+                sua fonte de informações e outros detalhes.
+            </p>
+            <h3>Ferramentas Utilizadas</h3>
+            <p>
+                A linguagem escolhida para a analise dos dois datasets utilizado foi o <strong>python</strong>, em decorrência da
+                facilidade de sua escrita e bibliotecas especializada a tarefa de analise de dados, como
+                <strong>pandas</strong>(Manipulação de DataFrame), <strong>matplotlib</strong> e <strong>seaborn</strong>(Ambas para a construção e estilização de
+                gráficos)
+            </p>
+            <p>
+                Para demonstraçao dos resultados utilizados, foi construído uma pagina simples em HTML e hospedada
+                através do GitHub Pages.
+            </p>
+        </section>
+
+        <section id="analise">
+            <h2>Análise</h2>
+            <h3 id="analise_startup_segmento">Analise Principal de Startup por Segmento </h3>
+            <h3>Internacional</h3>
+            <div class="galeria">
+                <img src="img/Analise_Startup_Pais_Soma_Valorizacao.png" alt="Robô montado pelos alunos">
+                <img src="img/Analise_Startup_Pais_Total_Investimento.png" alt="Alunos programando o robô">
+                <img src="img/Analise_Startup_Pais_QTD.png" alt="Equipe apresentando o projeto final">
+                <img src="img/Analise_Startup_Pais_Valor_Investido.png" alt="Figura 4">
+            </div>
+            <ul>
+                <h4>Valor Total Estimado Por Segmento</h4>
+
+                <li>O domínio do E-commerce pode ser explicado pelo crescimento exponencial das compras online, impulsionado principalmente pela <strong>pandemia</strong> e pela <strong>digitalização global do varejo.</strong></li>
+                <li>HealthTech e SaaS (Software as a Service) também se destacam devido à alta demanda por <strong>soluções tecnológicas na saúde</strong> e automação de processos empresariais.</li>
+                <li>Biotech, embora importante, tem um ciclo de desenvolvimento <strong>mais longo</strong> e <strong>exige mais investimento</strong> em pesquisa, o que pode justificar seu valor estimado menor em comparação.</li>
+
+                <h4>Total de Investimento em Startups por Ano</h4>
+                <li>Há picos notáveis por volta de 2015 a 2019 que coincidem com <strong>períodos de inovação tecnológica intensa</strong> e o boom de <strong>startups unicórnios</strong>.</li>
+                <li>A queda observada em 2020 pode estar relacionada à incerteza econômica provocada pela <strong>pandemia de COVID-19</strong>, onde muitos investidores reduziram o risco.</li>
+                <li>A recuperação posterior demonstra a resiliência do ecossistema de startups e a retomada da confiança dos investidores, especialmente em setores como <strong>saúde, logística e tecnologia</strong>.</li>
+
+                <h4>Quantidade de Startup por Segmento</h4>
+
+                <li>A dominância de HealthTech pode refletir a atenção crescente a soluções de saúde, telemedicina e wearables.</li>
+                <li>SaaS se destaca por seu <strong>modelo de negócio escalável</strong> e por atender empresas de todos os portes.</li>
+                <li>A menor participação da Biotech está alinhada com seu desenvolvimento <strong>mais técnico, caro e regulado</strong>, o que reduz o número de players no mercado.</li>
+
+                <h4>Valor Investido Total por Segmento</h4>
+                <li>O alto investimento em HealthTech mostra que, além de haver muitas startups, elas também recebem grandes aportes individuais, o que é típico em áreas com <strong>alto impacto social</strong> e <strong>potencial de crescimento.</strong></li>
+                <li>E-commerce permanece forte pelo seu <strong>alcance global</strong> e <strong>rápida escalabilidade.</strong></li>
+                <li>O investimento relativamente baixo em Biotech, mesmo com grande potencial, é reflexo do <strong>alto risco</strong> e <strong>longo retorno</strong> do setor, o que exige investidores especializados.</li>
+            </ul>
+            <h3>Nacional</h3>
+            <div class="galeria">
+                <img src="imagens/Analise_Startup_Segmento_Nacional/Analise_Startup_Segmento_Nacional_Soma_Valorizacao.png" alt="Robô montado pelos alunos">
+                <img src="imagens/Analise_Startup_Segmento_Nacional/Analise_Startup_Segmento_Nacional_Total_Investimento.png" alt="Alunos programando o robô">
+                <img src="imagens/Analise_Startup_Segmento_Nacional/Analise_Startup_Segmento_Nacional_QTD.png" alt="Equipe apresentando o projeto final">
+                <img src="imagens/Analise_Startup_Segmento_Nacional/Analise_Startup_Segmento_Nacional_Valor_Investido.png" alt="Figura 4">
+            </div>
+            <ul>
+                <h4>Valor Total Estimado Por Segmento</h4>
+
+                <li>O segmento <strong>Blockchain lidera</strong> em valor estimado, com cerca de US$ 0.64 trilhões, seguido de <strong>SaaS (0.56T), EdTech (0.54T) e AI (0.52T)</strong>. Setores como Fintech, HealthTech e E-commerce aparecem nas últimas posições, com valores entre US$ 0.47T e 0.50T.</li>
+                <li>O Brasil apresenta um cenário onde segmentos mais especulativos (como Blockchain e AI) têm <strong>maior valor estimado</strong>, enquanto setores com demanda consolidada e impacto direto na economia real <strong>(como E-commerce e HealthTech)</strong> têm menor representatividade.</li>
+                <li>Indica <strong>menor maturidade</strong> dos mercados consumidor e investidor, que priorizam inovação disruptiva <strong>sem um histórico comprovado de retorno</strong> e sobreavaliação de tecnologias emergentes no Brasil;</li>
+
+                <h4>Total de Investimento em Startups por Ano</h4>
+                <li><strong>Volatilidade evidente</strong> no volume de investimentos, oscilando entre US$ 0.043T e US$ 0.08T, apresentando <strong>ausência de tendência clara</strong> de crescimento ao longo do tempo. </li>
+                <li>A ausência de tendência de crescimento pode ser resultado da <strong>falta de confiança dos investidores</strong> no cenario nacional, baixo número de unicórnios que atraiam grandes aportes ou <strong>fuga de cérebros</strong> ou startups brasileiras buscando captação fora.</li>
+
+                <h4>Quantidade de Startup por Segmento</h4>
+
+                <li>Os segmentos com o maior número de startup nacionais são <strong>Blockchain (82), SaaS (69), AI (65)</strong>, enquanto intercionalmente são os segmentos de <strong>HealthTech (685), SaaS (643), E-commerce (633)</strong></li>
+                <li>O Brasil apresentada <strong>baixa densidade</strong> de startup se comparado ao cenário nacional, 520 startup nacionais para 5000 startup internacionais, praticamente <strong>10% do cenário internacional</strong></li>
+                <li>Baixa densidade de startups no Brasil pode ser resultado de menor acesso a capital semente, <strong>barreiras burocráticas</strong> à abertura de empresas e cultura empreendedora <strong>ainda em crescimento</strong>.</li>
+                <li>A concentração brasileira em Blockchain e AI, apesar de seu risco elevado e longo ciclo de retorno, sugere <strong>baixo alinhamento</strong> com demandas reais do mercado e <strong>influência de modismos tecnológicos</strong>, possivelmente com baixa retenção de valor a longo prazo</li>
+                <li>O investidor nacional pode encontrar oportunidades negligenciadas em setores como E-commerce e HealthTech, ainda pouco explorados no Brasil mas com <strong>histórico consolidado globalmente.</strong></li>
+
+                <h4>Valor Investido Total por Segmento</h4>
+                <li>Os segmentos com maior valor investido no cenário nacional são <strong>Blockchain (US$ 0.22T, 16.83%), SaaS (13.44%), EdTech (12.16%)</strong>, apresentando uma falta de alinhamento com o cenário internacional</li>
+                <li>No Brasil, a liderança de Blockchain novamente indica uma <strong>visão otimista de longo prazo</strong>, mas potencialmente desalinhada com retorno imediato.</li>
+                <li>Empreendedores brasileiros devem observar o comportamento de investidores internacionais e adaptar modelos de negócio em setores como <strong>saúde, varejo digital e SaaS.</strong></li>
+            </ul>
+        </section>
+
+        <section>
+            <h3 id="analise_complementar_startup_segmento">Analise Complementar de Startup por Segmento </h3>
+            <h3>Internacional</h3>
+            <div class="galeria">
+                <img src="imagens/Analise_Startup_Segmento/Analise_Startup_Segmento_Receita_Anual.png" alt="Alunos programando o robô">
+                <img src="imagens/Analise_Startup_Segmento/Analise_Startup_Segmento_Media_Funcionario.png" alt="Equipe apresentando o projeto final">
+                <img src="imagens/Analise_Startup_Segmento/Analise_Startup_Segmento_Estagio_Desenvolvimento.png" alt="Robô montado pelos alunos">
+                
+            </div>
+            <ul>
+                <h4>Soma da Receita Anual por Segmento</h4>
+
+                <li>O segmento <strong>Tech lidera a geração de receita</strong> com US$ 262 bilhões, seguido por <strong>Logistics (US$ 256B), AI (US$ 252B) e Gaming (US$ 251B)</strong></li>
+                <li>Setores tradicionais em tecnologia e inovação (como Tech e AI) continuam sendo os maiores <strong>atratores de receita</strong>, evidenciando seu papel estratégico em <strong>economias desenvolvidas</strong>.</li>
+                <li>Logística aparece como destaque com alta receita, refletindo o <strong>crescimento do e-commerce</strong> e as demandas por eficiência na cadeia de suprimentos global — especialmente após a pandemia.</li>
+                <li>A diferença entre o primeiro e o último segmento é pequena (~US$ 28B), o que indica uma <strong>distribuição relativamente equilibrada</strong> de oportunidades em setores variados, um bom indicativo para <strong>diversificação de investimentos</strong>.</li>
+
+                <h4>Média de Funcionários de Startup por Segmento</h4>
+                <li><strong>AI (2.593 funcionários)</strong> e <strong>Tech (2.577)</strong> lideram em número médio de empregados por startup, acima da média geral de 2.483 funcionários.</li>
+                <li>Healthcare com baixa média pode indicar startups mais especializadas, ou que operam em <strong>nichos bem definidos</strong> com estruturas enxutas.</li>
+                <li>Gaming e FoodTech também possuem médias elevadas, sugerindo a <strong>complexidade operacional</strong> e a <strong>necessidade de equipes multidisciplinares</strong> (design, engenharia, marketing).</li>
+                <li>O pequeno desvio entre os setores (cerca de 200 colaboradores) pode indicar <strong>padronização de operações</strong> em startups maduras e certa <strong>convergência</strong> nas práticas de gestão de pessoal.</li>
+
+                <h4>Quantidade de Startups por Estágio de Investimento em Cada Setor</h4>
+
+                <li><strong>Seed e Series A</strong> concentram a maior parte das startups na maioria dos segmentos — sinalizando <strong>etapas iniciais de desenvolvimento</strong> e validação de produto/mercado.</li>
+                <li><strong>Tech, Energy e Logistics</strong> são os segmentos com maior número de startups no estágio IPO, o que reflete <strong>maior maturidade do ecossistema</strong>, ideal para investidores mais <strong>conservadores</strong></li>
+                <li><strong>FinTech e Gaming</strong> possuem número expressivo de startups nos estágios Series B e C, o que aponta <strong>forte potencial de escalabilidade</strong>, opções de investimentos <strong>mais arriscadas</strong>, mas com maior potencial de retorno</li>
+            </ul>
+        <h3>Nacional</h3>
+            <div class="galeria">
+                <img src="imagens/Analise_Startup_Segmento_Nacional/Analise_Startup_Segmento_Nacional_Receita_Anual.png" alt="Alunos programando o robô">
+                <img src="imagens/Analise_Startup_Segmento_Nacional/Analise_Startup_Segmento_Nacional_Media_Funcionario.png" alt="Equipe apresentando o projeto final">
+                <img src="imagens/Analise_Startup_Segmento_Nacional/Analise_Startup_Segmento_Nacional_Estagio_Desenvolvimento.png" alt="Robô montado pelos alunos">
+                
+            </div>
+            <ul>
+                <h4>Soma da Receita Anual por Segmento</h4>
+
+                <li>O setor de <strong>IA (Inteligência Artificial)</strong>  lidera com 30 bilhões de dólares, seguido de perto por <strong>Healthcare (29B)</strong> e <strong>Energy (27B)</strong>.</li>
+                <li>IA e Healthcare têm grande destaque no Brasil, indicando investimento crescente em <strong>tecnologia de ponta e saúde</strong> — áreas com <strong>alto impacto social e inovação</strong> .</li>
+                <li>O setor de Tech tradicional está <strong>relativamente abaixo</strong>, o que pode indicar <strong>dispersão de capital</strong> para setores mais específicos (como IA e FinTech).</li>
+                <li>O setor de EdTech tem baixa receita, possivelmente devido à <strong>adoção mais lenta</strong> de tecnologia na educação pública e privada.</li>
+                <li>Os segmentos de AI, Healthcare e Energy são os únicos que se aproximam do padrão internacional em termos de receita, enquanto Tech tradicional e EdTech têm um enorme vão, indicando <strong>oportunidades de expansão</strong> ou <strong>desafios locais</strong>.</li>
+
+                <h4>Média de Funcionários de Startup por Segmento</h4>
+
+                <li><strong>Logistics (2.748 funcionários)</strong> e <strong>AI (2.526)</strong> lideram em número médio de empregados por startup, enquanto <strong>EdTech (1.949)</strong> e <strong>FinTech (2.086)</strong> estão no final do ranking.</li>
+                <li>Startups de logística exigem <strong>grandes equipes operacionais</strong> e distribuição, o que justifica sua posição, enquanto EdTech e FinTech, com produtos <strong>altamente digitais</strong> e <strong>escaláveis</strong>, conseguem operar com equipes menores.</li>
+                <li>O alto número médio de funcionários em IA reforça a <strong>complexidade técnica</strong> e <strong>multidisciplinar</strong> dessas startups.</li>
+                <li>A média de funcionários nas startups brasileiras tende a ser <strong>levemente inferior</strong>, exceto no setor de logística, refletindo uma menor escala operacional, mas com exceções ligadas à realidade local (como <strong>infraestrutura logística mais deficiente</strong>, exigindo mais pessoal).</li>
+
+                <h4>Quantidade de Startups por Estágio de Investimento em Cada Setor</h4>
+
+                <li>Todos os segmentos têm <strong>distribuição razoavelmente balanceada</strong> entre Seed, Series A, B e C, além de IPOs.</li>
+                <li><strong>AI</strong> e <strong>E-commerce</strong> têm mais startups em IPO, mostrando <strong>maior maturidade</strong>, enquanto <strong>FinTech</strong> e <strong>Logistics</strong> têm mais startups em fase Seed, indicando presença de startups ainda em <strong>estágio inicial</strong>.</li>
+                <li>AI é destaque tanto em receita quanto em maturidade (muitos IPOs), indicando <strong>forte desenvolvimento</strong> e <strong>atratividade para investidores</strong>.</li>
+                <li>FinTech no Brasil ainda está em desenvolvimento em comparação com o exterior, com predominância no <strong>estágio Seed</strong></li>
+                <li>EdTech tem poucos IPOs e alta proporção em Series C, indicando <strong>crescimento lento</strong>.</li>
+                <li>O cenário brasileiro está em <strong>estágio anterior de maturidade</strong>. A maioria das startups ainda está em <strong>fase de crescimento</strong> e <strong>validação de modelo de negócio</strong>, enquanto no exterior muitas já atingiram o nível de IPO.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3 id="analise_startup_pais">Analise Principal de Startup por Pais </h3>
+            <div class="galeria">
+                <img src="img/Analise_Startup_Segmento_Crescimento.png" alt="Robô montado pelos alunos">
+                <img src="img/Analise_Startup_Segmento_QTD_Investidores.png" alt="Alunos programando o robô">
+                <img src="img/Analise_Startup_Segmento_Surgimento_Startup.png" alt="Robô montado pelos alunos">
+                <img src="img/Analise_Startup_Segmento_Maior_Valor.png" alt="Alunos programando o robô">
+            </div>
+            <ul>
+                <h4>Média de Crescimento por País</h4>
+
+                <li>A Alemanha lidera com uma média superior a 105%, o que indica um <strong>ecossistema robusto</strong>, infraestrutura sólida e <strong>forte apoio governamental</strong> à inovação.</li>
+                <li>O destaque do Brasil é positivo e mostra o <strong>avanço dos mercados emergentes</strong> na criação de ambientes favoráveis à inovação, mesmo com desafios estruturais.</li>
+                <li>Países como Singapura e Reino Unido, embora com histórico de desenvolvimento tecnológico, aparecem com crescimento mais modesto, talvez indicando <strong>uma saturação</strong> ou <strong>estabilidade</strong> em seus mercados.</li>
+
+                <h4>Total de Investidores por País</h4>
+                <li>A Austrália, liderando o ranking, demonstra um ecossistema de investimento muito ativo, possivelmente impulsionado por <strong>políticas públicas de incentivo</strong> e capital de risco regional.</li>
+                <li>O alto número de investidores no Reino Unido e nos EUA reflete a <strong>maturidade</strong> e <strong>atratividade</strong> desses mercados para o capital de risco.</li>
+                <li>Países emergentes como Índia e Brasil mostram volumes significativos, mas ainda distantes dos líderes, sinalizando <strong>espaço para crescimento</strong> no setor de investimentos em startups.</li>
+
+                <h4>Evolução Anual da Fundação de Startups</h4>
+
+                <li>A variação pode estar associada a fatores econômicos globais, como crises financeiras (ex: 2008), políticas de incentivo à inovação, ou até eventos globais como a pandemia de COVID-19.</li>
+                <li>O pico em 2020, por exemplo, pode ter sido impulsionado por uma nova onda de <strong>soluções digitais</strong> criadas em resposta às necessidades da pandemia.</li>
+                <li>A queda em 2023 pode indicar <strong>maturação de mercado</strong>, <strong>maior seletividade dos investidores</strong> ou retração econômica global.</li>
+
+                <h4>Maiores Investimentos por País</h4>
+                <li>A distribuição relativamente equilibrada dos investimentos mostra uma <strong>globalização do capital de risco</strong>, com aportes consistentes tanto em países desenvolvidos quanto emergentes.</li>
+                <li>A França no topo pode refletir sua estratégia nacional de apoio à inovação e tecnologia (como o <strong>programa “La French Tech”</strong>).</li>
+                <li>O Brasil, apesar de sua posição no meio da tabela, confirma seu <strong>papel relevante</strong> como <strong>destino de capital</strong> para startups na América Latina.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3 id="analise_complementar_startup_pais">Analise Complementar de Startup por Pais</h3>
+            <div class="galeria">
+                <img src="imagens/Analise_Startup_Pais/Analise_Startup_Pais_Distribuicao_Segmento.png" alt="Robô montado pelos alunos">
+                <img src="imagens/Analise_Startup_Pais/Analise_Startup_Pais_Estagio_Desenvolvimento.png" alt="Alunos programando o robô">
+                <img src="imagens/Analise_Startup_Pais/Analise_Startup_Pais_Media_Avaliacao_Sucesso.png" alt="Robô montado pelos alunos">
+            </div>
+            <ul>
+                <h4>Quantidade de Startups por Segmento em Cada País</h4>
+
+                <li>Segmentos relacionados de modo geral a <strong>tecnologia(Tech e Edtech)</strong> possuem uma <strong>forte representativiade</strong> em paises desenvolvidos e com um <strong>mercado de investimento sólido</strong>, como França e Alemanha</li>
+                <li>Os paises apresentam um foco geral no segmento de <strong>saúde(Healthcare)</strong>, presente também em mercados maduros como o da <strong>França, EUA e China</strong>.</li>
+                <li>Brasil tem uma forte presença em <strong>Energy (56)</strong> e <strong>Gaming (61)</strong>, sugerindo <strong>oportunidades</strong> e <strong>inovação</strong> nesses setores, ao contrário da tendência internacional</li>
+
+                <h4>Quantidade de Startups por Estágio de Investimento em Cada Setor</h4>
+
+                <li>Alemanha e França mostram equilíbrio, com <strong>Series C e IPO</strong>  em destaque, indicando empresas <strong>bem estruturadas</strong> e <strong>maduras</strong></li>
+                <li>Brasil e Japão se destacam em <strong>Series A</strong> e <strong>Seed</strong>, com menos startups em IPO, o que evidencia um <strong>ecossistema em crescimento</strong>, mas com <strong>baixa taxa de maturação</strong>.</li>
+                <li>EUA,Canadá e China têm números altos em <strong>Series B/C</strong>, refletindo <strong>robustez</strong> e capacidade de escalar startups, também evidenciando um <strong>estágio avançado de desenvolvimento</strong>.</li>
+                <li>Países como Alemanha, EUA e França lideram nos estágios mais avançados (IPO e Series C), mostrando <strong>maior maturidade do ecossistema</strong>. Brasil, Japão e Índia concentram-se em estágios médios (Seed/Series A), com <strong>espaço para crescimento</strong> e <strong>escalabilidade</strong>.</li>
+
+                <h4>Média de Avaliação de Sucesso por País</h4>
+
+                <li><strong>França (5.13)</strong> e <strong>EUA (5.12)</strong> lideram em avaliação de sucesso, demonstrando ambientes <strong>altamente favoráveis</strong> para startups.</li>
+                <li>Brasil (4.61) apresenta o <strong>menor índice</strong>, evidenciando desafios em alcançar performance e <strong>sucesso sustentáveis</strong>.</li>
+                <li>Alemanha (4.85) e Japão (4.91) têm avaliações <strong>abaixo da média</strong>, indicando possíveis <strong>gargalos</strong> no ambiente de negócios ou no <strong>suporte à inovação</strong>.</li>
+                <li>Startups em países com alta avaliação tendem a ter maior acesso a <strong>investimento e suporte</strong>. O Brasil precisa <strong>melhorar sua infraestrutura de inovação</strong>  e <strong>acesso a capital</strong> para elevar a taxa de sucesso. <strong>Políticas públicas</strong> e incentivo à aceleração podem ser caminhos viáveis.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3 id="analise_perfil">Analise de Perfil</h3>
+
+            <div class="galeria">
+                <img src="img/Analise_Perfil_Genero.png" alt="Robô montado pelos alunos">
+                <img src="img/Analise_Perfil_Faixa_Etaria.png" alt="Alunos programando o robô">
+                <img src="img/Analise_Perfil_Expectativa_Retorno.png" alt="Figura 4">
+                <img src="img/Analise_Perfil_Objetivo.png" alt="Equipe apresentando o projeto final">
+                <img src="img/Analise_Perfil_Fonte_Informacao.png" alt="">
+            </div>
+
+            <ul>
+                <h4>Distribuição de Gênero</h4>
+
+                <li>A maioria dos investidores participantes da pesquisa são do gênero masculino, representando cerca de 62,5% do total. Isso demonstra uma <strong>predominância masculina</strong> no ambiente de investimentos, embora a presença feminina, com 37,5%, aponte uma <strong>crescente inclusão e interesse das mulheres</strong> neste setor.</li>
+
+                <h4>Distribuição Faixa Etária</h4>
+                <li>A faixa etária predominante é de <strong>30 a 35 anos (52%)</strong>, seguida pela faixa de 25 a 30 anos (25%) e 20 a 25 anos (22%). Esses dados indicam que o público investidor é <strong>majoritariamente jovem</strong>, o que sugere uma geração mais conectada às finanças e <strong>preocupada com o planejamento</strong> de longo prazo.</li>
+
+                <h4>Objetivo do Investimento</h4>
+                <li>A principal motivação dos investidores é a <strong>apreciação de capital (65%)</strong>, ou seja, eles buscam valorização patrimonial ao longo do tempo. Em seguida, aparecem o crescimento (27,5%) e a renda (7,5%). Isso mostra um perfil de investidor mais arrojado, com <strong>foco em rentabilidade futura</strong> em vez de retorno imediato.</li>
+
+                <h4>Expectativa de Retorno</h4>
+                <li>A maioria dos participantes espera retornos na faixa de 20% a 30%, o que confirma uma tendência de expectativas elevadas quanto à performance de seus investimentos. Apenas uma pequena parcela almeja retornos entre 10% e 20% ou acima de 30%, evidenciando uma certa moderação dentro de uma visão majoritariamente otimista.</li>
+
+                <h4>Fontes de Informação</h4>
+                <li>As principais fontes de informação dos investidores são os <strong>consultores financeiros</strong> e os <strong>jornais/revistas especializadas</strong>, seguidos pela televisão. A internet, curiosamente, aparece com menor relevância, sugerindo que, embora o público seja jovem, ainda há uma valorização de fontes tradicionais e especializadas, talvez em busca de <strong>maior credibilidade ou confiabilidade</strong> nas decisões.</li>
+            </ul>
+        </section>
+
+        <section id="conclusao">
+            <h2>Conclusão</h2>
+            <p>
+                O projeto desenvolvido visa auxiliar investidores iniciantes a compreenderem melhor o ecossistema de startups, fornecendo informações valiosas sobre segmentos promissores, estágios de investimento e desempenho por país. Através da análise dos dados coletados, foram identificadas tendências e oportunidades que podem orientar decisões de investimento mais informadas.
+            </p>
+            <p>
+                A análise dos dados internacionais revelou que segmentos como <strong>E-commerce, HealthTech e SaaS (Software as a Service)</strong> lideram em termos de valor total estimado e volume de investimentos. Esses setores se beneficiaram significativamente da <strong>digitalização acelerada</strong> e das mudanças no comportamento do consumidor, especialmente durante e após a <strong>pandemia de COVID-19</strong>.
+            </p>
+            <p>
+                Observou-se também que o número de startups e os investimentos por segmento variam conforme o país, refletindo as <strong>prioridades econômicas</strong> e <strong>tecnológicas locais</strong>. Por exemplo, países com forte infraestrutura tecnológica tendem a ter maior concentração de startups em SaaS e HealthTech.
+            </p>
+            
+            <p>
+                A Alemanha destacou-se com a <strong>maior média de crescimento percentual</strong> entre os países, enquanto a Austrália
+                lidera em <strong>número de investidores</strong>, indicando um ambiente altamente engajado.
+            </p>
+            <p>
+                Ao focar no cenário nacional, foram identificadas particularidades que diferenciam o Brasil do contexto global, tal como a receita anual por segmento. No Brasil, os segmentos de <strong>Inteligência Artificial (IA), Healthcare e Energy</strong> lideram em receita anual, indicando uma crescente valorização dessas áreas.
+            </p>
+            <p>
+                Referente a média de funcionários por segmento, as startups brasileiras de Logística e IA apresentam as maiores médias de funcionários, sugerindo operações mais intensivas em mão de obra e complexidade técnica.
+            </p>
+            <p>
+                Sobre os estágios de investimento, a maioria das startups brasileiras encontra-se nos estágios iniciais de investimento <strong>(Seed e Series A)</strong>, com menor presença em estágios avançados como IPO, indicando um ecossistema <strong>em desenvolvimento</strong> e com <strong>potencial de crescimento</strong>.
+            </p>
+            
+            <p>
+                No que diz respeito ao perfil dos investidores, a predominância masculina e a faixa etária entre 25 e 30 anos sugerem um <strong>público jovem</strong> e ainda marcado por uma <strong>participação desigual de gênero.</strong> A maioria busca valorização de capital, o que caracteriza um perfil arrojado, com altas expectativas de retorno.
+            </p>
+            <p>
+                Além disso, nota-se uma forte confiança em fontes tradicionais de informação, como consultores
+                financeiros e publicações impressas, embora isso aponte para oportunidades no <strong>fortalecimento de canais
+                digitais</strong> confiáveis.
+            </p>
+            <p>
+                Portanto, o cenário analisado mostra um ecossistema de startups em crescimento, impulsionado por
+                investidores jovens, bem informados e ambiciosos, especialmente voltados a setores estratégicos da
+                economia moderna. Essa sinergia entre inovação e capital cria um <strong>terreno fértil para novos negócios</strong>,
+                desde que haja equilíbrio entre risco, retorno e acesso à informação de qualidade.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Projeto Integrador III</p>
+    </footer>
+
+</body>
+
+</html>
